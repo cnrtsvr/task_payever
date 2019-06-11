@@ -1,0 +1,42 @@
+<div class="user-card-container">
+  <mat-card *ngIf="!!user" class="user-card mat-elevation-z8">
+    <mat-card-header>
+      <mat-card-title>User Details</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="user.avatar" alt="User Avatar">
+    <div class="card-content">
+      <label for="name_span">Name: </label>
+      <span id="name_span">{{user.first_name + ' ' + user.last_name}}</span>
+    </div>
+    <div class="card-content">
+      <label for="email_span">Email: </label>
+      <span id="email_span">{{user.email}}</span>
+    </div>
+    <!--
+    <mat-card-content>
+      <div class="form-row">
+        <mat-form-field class="user-form-field">
+          <input matInput placeholder="First Name" [(ngModel)]="user.first_name">
+        </mat-form-field>
+        <mat-form-field class="user-form-field">
+          <input matInput placeholder="Last Name" [(ngModel)]="user.last_name">
+        </mat-form-field>
+      </div>
+      <div class="form-row">
+        <mat-form-field class="user-form-field">
+          <input matInput placeholder="E-Mail" [(ngModel)]="user.email">
+        </mat-form-field>
+      </div>
+      <div class="form-row">
+        <mat-form-field class="user-form-field">
+          <input matInput placeholder="Avatar URL" [(ngModel)]="user.avatar">
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+    -->
+    <mat-card-actions class="card-actions">
+      <button mat-button (click)="goBack()">Back</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

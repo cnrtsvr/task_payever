@@ -1,0 +1,6 @@
+.user-table {
+  width: 100%;
+}
+.user-table-row-clickable {
+  cursor: pointer;
+}
