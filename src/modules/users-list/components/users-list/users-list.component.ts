@@ -3,7 +3,6 @@ import { PageEvent } from '@angular/material';
 import { ActivatedRoute, Router } from '@angular/router';
 import { map } from 'rxjs/operators';
 import { UserInterface } from '../../../../interfaces';
-import { ApiService } from '../../../core/services';
 
 @Component({
   selector: 'app-users-list',
